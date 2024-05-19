@@ -23,7 +23,7 @@ def hbnb():
     return 'HBNB'
 
 
-@app.route('/c/<text>')
+@app.route('/c/<text>', strict_slashes=False)
 def c_with_params(text):
     """ Return c text """
     text_no_underscore = text.replace('_', ' ')
