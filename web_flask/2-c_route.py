@@ -26,8 +26,7 @@ def hbnb():
 @app.route('/c/<text>', strict_slashes=False)
 def c_with_params(text):
     """ Return c text """
-    text_no_underscore = text.replace('_', ' ')
-    return "c {}".format(text_no_underscore)
+    return 'C ' + text.replace('_', ' ')
 
 
 if __name__ == '__main__':
